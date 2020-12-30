@@ -1,0 +1,119 @@
+@import 'config';
+
+.content-block {
+  position: relative;
+  width: 100%;
+
+  &__content {
+    padding: ($space * 10);
+    box-sizing: border-box;
+
+    @media only screen and (max-width: 600px) {
+      padding: ($space * 8) ($space * 6);
+      width: 100%;
+    }
+
+
+    h1, p, .buttons {
+      max-width: 720px;
+    }
+
+    & > .buttons {
+      padding: 30px 0;
+    }
+  }
+
+  &--image-right {
+
+    @media only screen and (min-width: 601px) {
+      .content-block__content {
+        width: calc(100% - 150px);
+        padding-right: 240px;
+      }
+      img {
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .content-block__content {
+        padding-bottom: $space * 15;
+      }
+      img {
+        position: relative;
+        transform: translateY(-($space * 8));
+        float: right;
+      }
+    }
+
+    img {
+      width: 300px;
+      right: 0;
+    }
+  }
+
+  &--image-center {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .content-block__content {
+      position: relative;
+      top: -90px;
+      width: 100%;
+      padding-top: 180px;
+    }
+
+    h1, p, .buttons {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    img {
+      position: relative;
+      z-index: 1;
+      padding: 0 12px;
+      max-width: 720px;
+    }
+  }
+
+
+  &--image-top-left {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+
+    .content-block__content {
+      padding-top: 240px;
+      top: -180px;
+      position: relative;
+      align-self: flex-end;
+
+      @media only screen and (min-width: 601px) {
+        width: calc(100% - 150px);
+      }
+    }
+
+    img {
+      position: relative;
+      z-index: 1;
+      @media only screen and (min-width: 601px) {
+        width: 480px;
+      }
+      @media only screen and (max-width: 600px) {
+        width: 300px;
+      }
+    }
+  }
+
+  &--image-top-left,
+  &--no-image {
+    h1, p, .buttons {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+}

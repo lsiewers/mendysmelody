@@ -1,0 +1,19 @@
+<section class="reviews">
+  <h1 class="reviews__title">Ervaringen</h1>
+  <ul class="reviews__list">
+    <li class="reviews__list__item" [class.active]="activeReview == i" *ngFor="let review of reviews; let i = index">
+        <blockquote class="container">"{{ review }}"</blockquote>
+    </li>
+  </ul>
+  <div class="reviews__controls">
+    <button class="reviews__controls__previous" (click)="setActive(activeReview - 1)">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 18"><path d="M25.08 7.936L17.204.321c-.814-.767-2.035-.075-2.035 1.186v2.547c0 .816-.448 1.533-1.12 1.533H1.533C.86 5.587.31 6.181.31 7.022v4.005c0 .792.55 1.484 1.222 1.484h12.516c.672 0 1.12.643 1.12 1.459v2.547c0 1.236 1.22 1.928 2.014 1.162l7.857-7.418c.65-.569.671-1.731.04-2.325z" fill="inherit"/></svg>
+    </button>
+    <ul class="reviews__controls__dots">
+      <li class="reviews__controls__dots__dot" [class.active]="activeReview == i" *ngFor="let review of reviews; let i = index" (click)="setActive(i)"></li>
+    </ul>
+    <button class="reviews__controls__next" (click)="setActive(activeReview + 1)">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 18"><path d="M25.08 7.936L17.204.321c-.814-.767-2.035-.075-2.035 1.186v2.547c0 .816-.448 1.533-1.12 1.533H1.533C.86 5.587.31 6.181.31 7.022v4.005c0 .792.55 1.484 1.222 1.484h12.516c.672 0 1.12.643 1.12 1.459v2.547c0 1.236 1.22 1.928 2.014 1.162l7.857-7.418c.65-.569.671-1.731.04-2.325z" fill="inherit"/></svg>
+    </button>
+  </div>
+</section>

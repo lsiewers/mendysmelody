@@ -1,0 +1,75 @@
+@import '../../../assets/scss/config';
+
+.footer {
+  display: flex;
+
+  @media only screen and (min-width: 601px) {
+    flex-wrap: wrap;
+    padding: ($space * 10) ($space * 12) 0;
+    justify-content: space-between;
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    padding: ($space * 10) ($space * 6) 0;
+
+    & > * {
+      width: 100%;
+      padding: ($space * 4) 0 ;
+    }
+  }
+
+  &__logo {
+    margin: 0;
+  }
+
+  &__links {
+    list-style: none;
+    margin: 0;
+
+    @media only screen and (max-width: 600px) {
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: $space * 3;
+    }
+
+    & a { color: $color--brown-700; }
+  }
+
+  &__extra {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    fill: $color--brown-500;
+
+    &__social {
+      a:first-of-type {
+        margin-right: $space * 2;
+      }
+
+    }
+
+    &__info {
+      padding: 0;
+      list-style: none;
+      &, & a { color: $color--brown-500; }
+    }
+  }
+
+  &__copyright {
+    width: 100vw;
+    padding: ($space * 10) 0 ($space * 4);
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+
+    &, & a { color: $color--brown-500; }
+  }
+}

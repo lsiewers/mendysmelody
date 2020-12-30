@@ -1,0 +1,22 @@
+@import '../../../assets/scss/config';
+
+.navigation {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
+  &__logo {
+    margin: 0;
+    background-color: white;
+    padding: $space * 5;
+    margin-left: $space * 2;
+
+    @media only screen and (max-width: 600px) {
+      padding: $space * 4;
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+}

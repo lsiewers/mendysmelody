@@ -1,0 +1,42 @@
+$color--green-100: #F2F8EF;
+$color--green-700: #2A5A1E;
+$color--brown-200: #F6DCAD;
+$color--brown-500: #CB9A57;
+$color--brown-600: #BE8C4E;
+$color--brown-700: #9B6E46;
+$color--brown-900: #47250F;
+
+$space: 6px;
+
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.bg--green-100 {
+  background-color: $color--green-100;
+
+  a, button, h1, h2, h3, h4, h5, h6 {
+    color: $color--brown-900;
+  }
+
+  p {
+    color: $color--brown-700;
+    line-height: 1.6;
+  }
+}
+
+.bg--green-700 {
+  background-color: $color--green-700;
+
+  a, button, h1, h2, h3, h4, h5, h6 {
+    color: white;
+  }
+
+  p {
+    color: $color--brown-200;
+    line-height: 1.6;
+  }
+}

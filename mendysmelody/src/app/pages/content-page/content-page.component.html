@@ -1,0 +1,17 @@
+
+<article class="page">
+  <figure class="header__figure">
+    <img [src]="imagePath + data.header.image" [alt]="data.header.alt">
+  </figure>
+  <main>
+    <section
+      *ngFor="let block of data.content"
+      class="container content-block content-block--{{block.type}}">
+      <div class="content-block__content bg--{{block.bgColor}}">
+        <h1 *ngIf="block.title !== ''">{{ block.title }}</h1>
+        <p>{{ block.text }}</p>
+      </div>
+      <img *ngIf="block.image !== ''" [src]="imagePath + block.image" [alt]="block.alt">
+    </section>
+  </main>
+</article>
