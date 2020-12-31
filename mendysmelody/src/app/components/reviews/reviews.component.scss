@@ -3,6 +3,7 @@
 .reviews {
   background: linear-gradient(90deg, $color--green-100, white);
   padding: ($space * 14) 0;
+  margin-top: $space * 12;
 
   &__title {
     text-align: center;
@@ -23,12 +24,22 @@
       flex-shrink: 0;
       width: 100vw;
       text-align: center;
-      font-family: monarcha, serif;
-      font-weight: 700;
-      font-style: italic;
-      font-size: 1.8rem;
-      padding: 0 ($space * 4);
+      padding: 0 ($space * 5);
       box-sizing: border-box;
+
+      blockquote {
+        font-family: monarcha, serif;
+        font-weight: 700;
+        font-style: italic;
+        line-height: 1.5;
+      }
+
+      @media only screen and (max-width: 600px) {
+        blockquote { font-size: 1.2rem; }
+      }
+      @media only screen and (min-width: 601px) {
+        blockquote { font-size: 1.8rem; }
+      }
 
       &.active {
         display: block;
@@ -64,27 +75,31 @@
       margin-left: $space
     }
 
-    &__dots {
-      display: flex;
-      justify-content: center;
-      padding: 0;
-
-      &__dot {
-        margin: 0 $space;
-        list-style: none;
-        position: relative;
-        border: solid 4px $color--brown-700; /* !importanté */
-        height: 9px;
-        width: 9px;
-        z-index: 1;
-        border-radius: 12px;
-        cursor: pointer;
-
-        &.active {
-          background-color: $color--brown-700;
-        }
-      }
+    span {
+      color: $color--brown-700;
     }
+
+    // &__dots {
+    //   display: flex;
+    //   justify-content: center;
+    //   padding: 0;
+
+    //   &__dot {
+    //     margin: 0 $space;
+    //     list-style: none;
+    //     position: relative;
+    //     border: solid 4px $color--brown-700; /* !importanté */
+    //     height: 9px;
+    //     width: 9px;
+    //     z-index: 1;
+    //     border-radius: 12px;
+    //     cursor: pointer;
+
+    //     &.active {
+    //       background-color: $color--brown-700;
+    //     }
+    //   }
+    // }
   }
 
 }

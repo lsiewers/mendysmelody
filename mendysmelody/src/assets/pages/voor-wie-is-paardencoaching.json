@@ -1,17 +1,25 @@
 {
   "title": "Voor wie is paardencoaching?",
   "header": {
-    "image": "foto4.jpg",
+    "image": "tanja.JPG",
     "alt": "Dit is een mooie foto van djsfaldkjsa"
   },
   "content": [
     {
       "type": "no-image",
       "bgColor": "green-100",
-      "title": "Hi",
-      "text": "Hi",
+      "title": "Voor wie is paardencoaching?",
+      "text": "Ik heb een aantal voorbeelden uit de praktijk. Deze mensen kwamen met deze coachvragen bij mij en de paarden. Ik geef ze als voorbeeld zodat je een beeld kan krijgen van wat paardencoaching voor je kan betekenen. In het leven gebeuren soms dingen waar je geen vat op hebt en waardoor het plezier in wat je doet helemaal kan verdwijnen. Problemen en zorgen nemen dan de overhand. Wat kan Paardencoaching voor je doen? Je kunt inzichten krijgen en je kan de regie over je gevoel weer terugpakken. De kracht van paardencoaching is dat je heel snel tot de kern kan komen en hierdoor nieuwe inzichten op kan doen. Waardoor je patronen en gewoontes makkelijker kan veranderen. Hierdoor kun je weer in je eigen sterke en mooie gevoel komen. ",
       "image": "",
       "alt": ""
+    },
+    {
+      "type": "image-right",
+      "bgColor": "green-700",
+      "title": "Voorbeelden",
+      "text": "Thema’s waar paardencoaching o.a. voor ingezet kan worden: Burnout, Hoogsensitiveit, ADHD, (Sociale) Angsten (onzekerheid, verlegenheid, contact leggen, bang voor afwijzing etc.), Problemen binnen relaties, Moeite hebben om grenzen te stellen, Ongezonde leefstijl, Rouwverwerking, Vastlopen in je werk, Opvoeding, Lastig om keuzes te maken",
+      "image": "nora-britta-kijkend.jpg",
+      "alt": "Nora en Britta rechts in beeld, kijkend naar links"
     }
   ]
 }

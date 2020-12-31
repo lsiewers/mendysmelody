@@ -11,6 +11,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContentPageComponent } from './pages/content-page/content-page.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { ContactBlockComponent } from './components/contact-block/contact-block.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     NavigationComponent,
     ReviewsComponent,
     HomeComponent,
-    ContentPageComponent
+    ContentPageComponent,
+    ContactBlockComponent
   ],
   imports: [
     BrowserModule,

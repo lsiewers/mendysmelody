@@ -1,0 +1,45 @@
+@import '../../../assets/scss/config';
+
+.contact-block {
+  background-color: $color--green-700;
+  color: white;
+  text-align: center;
+
+  @media only screen and (min-width: 601px) {
+    padding: ($space * 12) ($space * 10) ($space * 10);
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding: ($space * 12) ($space * 5) ($space * 10);
+  }
+
+  p { max-width: 720px; }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: $space * 6;
+
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+
+    &__button {
+      color: white;
+      padding: ($space * 2) ($space * 3);
+      margin: 0 $space;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1rem;
+
+      svg {
+        fill: white;
+        width: 24px;
+        margin-right: $space * 2;
+      }
+    }
+  }
+}

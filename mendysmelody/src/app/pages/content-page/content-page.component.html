@@ -9,7 +9,7 @@
       class="container content-block content-block--{{block.type}}">
       <div class="content-block__content bg--{{block.bgColor}}">
         <h1 *ngIf="block.title !== ''">{{ block.title }}</h1>
-        <p>{{ block.text }}</p>
+        <p [innerHTML]="block.text"></p>
       </div>
       <img *ngIf="block.image !== ''" [src]="imagePath + block.image" [alt]="block.alt">
     </section>
