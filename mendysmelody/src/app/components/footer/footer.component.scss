@@ -37,6 +37,11 @@
     }
 
     & a { color: $color--brown-700; }
+    & a.is--active {
+      color: $color--brown-900;
+      text-decoration: none;
+      pointer-events: none;
+    }
   }
 
   &__extra {

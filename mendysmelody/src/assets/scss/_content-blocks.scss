@@ -16,7 +16,7 @@
     }
 
 
-    h1, p, .buttons {
+    h1, h2, h3, h4, h5, h6, p, .buttons {
       max-width: 720px;
     }
 
@@ -68,7 +68,7 @@
       padding-top: 180px;
     }
 
-    h1, p, .buttons {
+    h1, h2, h3, h4, h5, h6, p, .buttons {
       margin-left: auto;
       margin-right: auto;
     }
@@ -87,7 +87,6 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-start;
-    margin-top: $space * 12;
 
     .content-block__content {
       padding-top: 240px;
@@ -114,10 +113,17 @@
 
   &--image-top-left,
   &--no-image {
-    h1, p, .buttons {
+    h1, h2, h3, h4, h5, h6, p, .buttons {
       margin-left: auto;
       margin-right: auto;
     }
   }
 
+  &:not(:first-of-type) {
+    &.content-block--no-image,
+    &.content-block--image-top-left {
+      margin-top: $space * 12;
+    }
+
+  }
 }

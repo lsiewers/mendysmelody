@@ -1,0 +1,17 @@
+{
+  "title": "Tarieven en prijzen",
+  "header": {
+    "image": "foto4.jpg",
+    "alt": "Dit is een mooie foto van djsfaldkjsa"
+  },
+  "content": [
+    {
+      "type": "no-image",
+      "bgColor": "green-700",
+      "title": "Tarieven en prijzen",
+      "text": "Een individuele sessie is €95,-. <br><br> Coachtrajecten kunnen afwijken in prijs. Voor meer informatie kan je hierover contact opnemen.",
+      "image": "",
+      "alt": ""
+    }
+  ]
+}
