@@ -1,13 +1,16 @@
 @import 'config';
 
 .button {
+  position: relative;
+  top: -20px;
   text-decoration: none;
   padding: 15px 30px;
   border-radius: 42px;
   word-wrap: none;
 
-  &:not(:first-child) {
-    margin-left: $space * 3;
+  &__container {
+    display: inline-block;
+    padding: 60px 0 0;
   }
 
   &--icon {
@@ -47,7 +50,7 @@
     }
 
     &:active {
-      top: 2px;
+      top: -18px;
 
       &::before {
         padding: 5px 5px;

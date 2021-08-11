@@ -21,7 +21,11 @@
     }
 
     & > .buttons {
-      padding: 30px 0;
+      padding: 0 0 30px;
+
+      @media only screen and (min-width: 601px) {
+        .button:first-child { margin-right: $space * 3; }
+      }
     }
   }
 
